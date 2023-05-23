@@ -1,0 +1,143 @@
+* {
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+*::selection {
+    background-color: #04ddb244;
+}
+
+.logo {
+    width: 80px;
+    height: 20px;
+    cursor: pointer;
+}
+
+figure img {
+    width: 80px;
+    height: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 6.7rem;
+    margin-right: -1rem;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0 1.5rem;
+}
+.nav__links .nav-link--selected {
+    color: #333;
+}
+.nav__links li a {
+    font-size: 1rem;
+    color: #7c7c7c;
+    font-weight: 600;
+    transition: all .2s ease-in 0s;
+}
+.nav__links li a:hover {
+    color: #333;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 3.5rem;
+}
+.intro h1, .intro h1 span {
+    font-weight: 700;
+    font-size: 5rem;
+    color: #333;
+    letter-spacing: -3px;
+}
+.intro h1 span {
+    color: #04ddb2;
+}
+.intro p {
+    color: #333;
+    font-size: 2rem;
+    font-weight: 100;
+    max-width: 700px;
+    line-height: 3rem;
+    letter-spacing: .2px;
+    padding: 1rem 0;
+    margin-bottom: 1.5rem;
+    margin-top: -1rem;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+}
+
+.download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 5rem 0;
+}
+.download h2 {
+    font-weight: 700;
+    font-size: 5rem;
+    max-width: 600px;
+    letter-spacing: -2px;
+    color: #333;
+    line-height: 80px;
+    cursor: default;
+}
+
+.button {
+    color: white;
+    background-color: #04ddb2;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;
+    padding: 1.1rem 2.6rem;
+    margin-top: 3rem;
+}
+
+#small {
+    color: white;
+    background-color: #04ddb2;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;
+    padding: .8rem 1.5rem;
+    cursor: pointer;
+}
+
+@media (max-width: 1700px) {
+    .intro h1, .intro h1 span {
+        font-weight: 700;
+        font-size: 4rem;
+    }
+    .intro p {
+        font-size: 1.5rem;
+        max-width: 600px;
+        line-height: 2rem;
+        letter-spacing: 1.2px;
+        padding: 1rem 0;
+    }
+    .download h2 {
+    font-size: 4rem;
+    letter-spacing: -2px;
+    line-height: 68px;
+    max-width: 500px;
+    }
+    .button {
+        font-size: 1.2rem;
+        padding: .8rem 2.4rem;
+    }
+}
